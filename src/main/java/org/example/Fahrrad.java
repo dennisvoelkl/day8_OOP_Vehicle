@@ -12,6 +12,7 @@ public class Fahrrad extends Vehicle{
         this.velocity+=kmh;
         if(this.velocity > maxGeschwindigkeit){
             System.out.println("Endgeschwindigkeit zu hoch");
+            //throw new RuntimeException("Geschwindigkeit darf 35 kmh nicht überschreiten");
             return this.velocity-=kmh;
         }
         System.out.println("Neue Geschwindigkeit: " + this.velocity);
